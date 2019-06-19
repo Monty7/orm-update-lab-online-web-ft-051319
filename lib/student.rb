@@ -56,6 +56,10 @@ class Student
     self.new(id, name, grade)
   end
   
+  def self.find_by_name
+    
+  end
+  
   def update
     sql = <<-SQL
       UPDATE students SET name = ?, grade = ? WHERE id = ?
